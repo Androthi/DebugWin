@@ -16,6 +16,7 @@ main :: proc() {
 
 	dbg.cls()
 	dbg.write("Hellope")
-	dbg.writeln("\n2nd line")
+	dbg.write(" World\n")
+	dbg.writeln("2nd line")
 	dbg.writeln("Bytes :", bytes)
 }

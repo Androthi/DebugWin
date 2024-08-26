@@ -49,7 +49,7 @@ cls :: proc() ->bool {
 	return true
 }
 
-write :: proc( args: ..any, sep:= " " ) ->bool {
+write :: proc( args: ..any ) ->bool {
 
 	find_window() or_return
 	str.builder_reset(&cbuffer)
@@ -59,7 +59,7 @@ write :: proc( args: ..any, sep:= " " ) ->bool {
 	return true
 }
 
-writeln :: proc( args: ..any, sep:= " " ) -> bool {
+writeln :: proc( args: ..any ) -> bool {
 
 	find_window() or_return
 	str.builder_reset(&cbuffer)
